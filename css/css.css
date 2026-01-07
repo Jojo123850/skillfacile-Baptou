@@ -1,0 +1,911 @@
+*{
+    margin:0;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* ATENTION ! VU QUE JAVAIS OUBLIÉ LES SECTIONS PUIS RAJOUTÉ APRES LES SECTIONS S'APPELLENT DIV1 DIV2 DIV3 ETC */
+
+
+a{
+    text-decoration: none;
+
+}
+
+/* bon la c ce qon applique à tout */
+
+header{
+
+    font-family: "Open Sans", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 1440px;
+    padding: 50px 0 100px 0;
+
+}
+
+/* sur le header, dont flex et wrap pr que ca soit aligné, space evenly pr que ca soit espacé + smooth */
+
+
+
+header ul {
+    list-style: none;
+    gap: 25px;
+    display: flex;
+
+}
+
+header a{
+
+        color: #423B73;
+}
+
+#boutonacc{
+
+    color: #30cd8a;
+}
+
+#boutonelearning{
+
+    color: #E34E67;
+}
+
+/* la c les 2 boutons colorés du menu */
+
+header img{
+
+    max-width: 268px;
+}
+
+
+
+#barres{
+    display: none;
+}
+
+@media screen and (max-width :1024px) {
+
+    header nav {
+        display: none;
+    }
+    header  {
+
+
+    justify-content: space-between;
+    
+
+
+    ;
+    }
+
+    header #barres {
+
+    display :flex;
+    }
+}
+
+/* la c le responsive  */
+
+header a:hover{
+
+    color:#30CD8A ;
+}
+
+#boutonelearning:hover{
+
+    color:#30CD8A ;
+}
+
+/* la c le hover sur le menu du header, faudra changer ça */
+
+
+#submenu{
+
+    display: none;
+}
+
+#boutonaccomp:hover #submenu{
+    
+    background-color: white;
+    display: grid;
+    list-style: none;
+    gap: 15px;
+    position: absolute;
+    padding: 15px 0;
+
+}
+
+
+footer{
+
+ font-family: "Open Sans", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background-color: #363450;
+
+}
+
+/* la en gros j'ai mis tout le footer en bleu, comme ça jpeu mettre juste la div1 max 1440 et plus tard j'ai mis div2 en blanc, qui a la prio vu que c'est ecrit plus bas */
+
+#ftdiv1{
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1440px;
+    justify-self: center;
+
+}
+
+
+
+#ftdiv1 h2{
+
+    color: white;
+    font-family: "oswald";
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+
+}
+
+
+
+
+#ftdiv1 p{
+    
+    font-family: "Open Sans", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+
+}
+
+#ftdiv1 ul{
+
+    list-style: none;
+    padding: 0;
+
+}
+
+#ftdiv1 a{
+    line-height: 20px;
+    color: white;
+
+}
+
+.ftcol {
+
+padding: 30px;
+height: 344px;
+
+}
+
+#ftdiv1 li{
+
+    padding: 12px 0px;
+}
+
+
+
+
+#ftdiv2{
+
+    background-color: white;
+    padding: 16px 0px ;
+    justify-items: center;
+
+}
+
+
+
+/* debut du main ! ↓↓↓↓↓ */
+
+
+
+#div1{
+
+    display: flex;
+    max-width: 1440px;
+    min-height: 600px;
+    justify-self: center;
+    padding: 0 10px 80px 10px;
+    margin: auto;
+
+}
+
+#div1 img{
+
+    max-width: 700px;
+     width: 50%;
+    padding: 20px;
+    height: fit-content;
+
+}
+
+#div1 h1{
+
+    font-family: "pacifico";
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 23px;
+    color: #E34E67;
+
+}
+
+#div1 h2{
+
+    font-family: "oswald";
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+    color: #423B73;
+    max-height: 473px;
+    margin: 0 130px 0 0;
+    padding: 10px 0 40px 0;
+}
+
+.p2div1{
+
+    font-family: "open sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #363450;
+    margin: 0 0 34px 0;
+
+}
+
+
+#div1 article{
+
+    align-self: center;
+}
+
+#bouton1div1{
+
+    color: white;
+    background-color: #30CD8A;
+    border: solid;
+    border-radius: 10px;
+    padding: 14px 30px;
+    border-width: 1px;
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 50px 0 0;
+
+}
+
+#bouton2div1{
+
+    color: #30CD8A;
+    background-color: white;
+    border: solid;
+    border-radius: 10px;
+    padding: 14px 30px;
+    border-width: 1px;
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 16px;
+}
+/* la j'aurais pu lier les 2 je pense mais bon 
+ et sinon la c juste le style sur la première div */
+
+
+ 
+#bouton1div1:hover{
+
+    color: #30CD8A;
+    background-color: white;
+
+
+}
+ 
+#bouton2div1:hover{
+
+    color: white;
+    background-color: #30CD8A;
+
+}
+
+#div2{
+
+    background-color: #1E1D31;
+    
+}
+
+#div2la{
+
+    max-width: 1440px;
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+     column-gap: 50px;
+     justify-self: center;
+     padding: 60px 30px;
+}
+
+
+#div2 article{
+
+    display: flex;
+    padding: 20px;
+}
+
+#div2 img{
+
+max-width: 82px;
+max-block-size: fit-content;
+padding: 20px;
+
+}
+
+#div2 h2{
+padding: 20px 0;
+font-family: "oswald";
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: #30CD8A;
+text-transform: uppercase;
+
+}
+
+#div2 p{
+
+font-family: "open sans";
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: white;
+
+}
+
+
+/* la en gros pareil que d'hab, div2 pour mettre le bg partout et div2la pour mettre maxwidth */
+
+
+#div2 a{
+
+    font-family: "open sans";
+    font-weight: 600;
+    font-size: 16px;
+    color: #30CD8A;
+    border: solid;
+    border-radius: 10px;
+    padding: 14px 30px;
+    border-width: 1px;
+    line-height: 16px;
+
+    margin: auto;
+    grid-column: 1/3;
+}
+
+
+#div2 a:hover{
+
+background: #30CD8A;
+background: linear-gradient(90deg,rgba(48, 205, 138, 1) 0%, rgba(255, 255, 255, 1) 100%);
+color: black;
+
+}
+
+/* la c le bouton au milieu, il est pas au milieu mais bref pg, la j'ai tenter un dégradé hover c pas ouf (pas de transition smooth? pk? ) */
+
+#div3{
+
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+#d3d1, #d3d2{
+
+    display:ruby;
+}
+
+
+#div3 h2{
+
+    font-family: "pacifico";
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 23px;
+    color: #E34E67;
+}
+
+#div3 h3{
+
+    font-family: "oswald";
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+    color: #423B73;
+    max-height: 473px;
+    padding: 10px 0 40px 0;
+    
+}
+
+#div3 h3{
+
+    font-family: "oswald";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #423B73;
+    max-height: 28px;
+    max-width: 514px;
+    padding: 10px 0 10px 0;
+    margin: auto;
+
+}
+#titre3zb{
+
+        padding: 10px 0 50px 0;
+}
+
+#d3p2{
+    font-family: "open sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 50px;
+    color: #363450;
+}
+
+
+
+
+#d3art1{
+
+    max-width: 1440px;
+    margin: 0 385px;
+    justify-self: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+#d3art2{
+
+    display: flex;
+    max-width: 1440px;
+    justify-self: center;
+    gap: 50px;
+    padding: 10px;
+
+
+}
+
+
+.d3p3{
+
+    color: #30CD8A;
+    font-family: "open sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+    padding-bottom: 35px;
+
+}
+
+
+
+.d3p4{
+
+    font-family: "open sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 40px;
+    border-radius: 24px;
+    background-color: #1E1D31;
+    color: white;
+    margin: auto auto 60px auto;
+ 
+}
+
+
+
+#d4art1{
+
+    justify-self: center;
+    text-align: center;
+
+}
+
+
+#div4 h2{
+
+    font-family: "pacifico";
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 23px;
+    color: #E34E67;
+}
+
+#div4 h3{
+
+    font-family: "oswald";
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+    color: #423B73;
+    max-width: 630px;
+    padding: 10px 0 40px 0;
+
+}
+
+
+
+
+#div4{
+
+padding: 60px 10px;
+max-width: 1440px;
+    margin: auto;
+
+}
+
+
+
+#d4demerde{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top:120px ;
+    margin-bottom: 20px;
+
+}
+
+#d4d1{
+
+align-content: center;
+background-color: #1E1D31;
+padding: 30px;
+border-radius: 24px;
+margin: auto;
+padding-right: 451px;
+}
+
+#div4 h4{
+
+padding: 20px 0;
+font-family: "oswald";
+font-weight: 700;
+font-size: 28px;
+line-height: 33px;
+color: #30CD8A;
+
+}
+
+#div4 ul{
+
+font-family: "open sans";
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: white;
+}
+
+
+
+
+#d4a999 a{
+
+    color: white;
+    background-color: #30CD8A;
+    border: solid;
+    border-radius: 10px;
+    padding: 14px 30px;
+    border-width: 1px;
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 16px;
+   display: block;
+    width: fit-content;
+    margin: auto;
+    
+
+}
+
+#div4 ul{
+
+list-style: none;
+padding: 0;
+
+}
+
+#imagezb  img{
+    width: 100%;
+}
+
+#imagetdc  img{
+    width: 100%;
+}
+
+
+#d4terrible{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top:120px ;
+    margin-bottom: 20px;
+
+}
+
+#d4a888 a{
+
+    background-color: white;
+    color: #30CD8A;
+    border: solid;
+    border-radius: 10px;
+    padding: 14px 30px;
+    border-width: 1px;
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 16px;
+    
+    display: block;
+    width: fit-content;
+    margin: auto;
+    
+
+}
+
+
+#d4d2{
+
+align-content: center;
+background-color: #1E1D31;
+padding: 30px;
+border-radius: 24px;
+margin: auto;
+padding-right: 451px;
+}
+
+#d4a999{
+
+    padding: 100px 0 ;
+}
+
+#d4a999 a:hover{
+
+    background-color: white;
+    color: #30CD8A;
+}
+
+
+#d4a888 a:hover{
+
+    color: white;
+    background-color: #30CD8A;
+}
+
+
+/* bon la c le style de la section 4 (div4), c horrible ya rien qui va et ça se voit qd on réduit la page jpp de cette partie */
+
+
+
+#div5{
+
+display: flex;
+max-width: 1440px;
+padding: 50px 10px;
+margin: auto;
+}
+    
+
+#d5a1 h2{
+
+    font-family: "pacifico";
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 23px;
+    color: #E34E67; 
+}
+
+#d5a1 h3{
+
+    font-family: "oswald";
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+    color: #423B73;
+    max-height: 473px;
+    padding: 10px 0 40px 0;
+
+}
+
+#d5a1 p{
+
+    font-family: "open sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #363450;
+}
+
+#d5a1{
+
+padding: 10px;
+padding-right: 215px;
+    align-content: space-evenly;
+
+}
+
+#d5a2{
+
+color: white;
+background-color: #1E1D31;
+padding: 30px;
+border-radius: 24px;
+
+}
+
+#div5 form{
+
+    gap: 20px;
+    display: grid;
+}
+
+#uneligne2form{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+#div5 h4{
+
+font-family: "oswald";
+font-weight: 700;
+font-size: 38px;
+line-height: 38px;
+max-width: 700px;
+justify-self: center;
+padding: 30px 0;
+text-transform: uppercase;
+
+}
+
+#div5 input{
+
+    background-color: #1E1D31;
+    border-width: 1px;
+    border-color: #30CD8A;
+   padding: 10px;
+}
+#div5 label{
+
+font-family: "open sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 50px;
+
+}
+
+#bloc{
+
+    height: 200px;
+}
+
+#div5 button{
+
+    color: white;
+    background-color: #30CD8A;
+    border: solid;
+    border-radius: 8px;
+    padding: 14px 30px;
+  border-color: rgb(0, 0, 0, 0%);
+    font-family: "roboto";
+    font-size: 15px;
+    line-height: 15px;
+    min-height: 40px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+
+}
+
+#div5 button:hover{
+
+ background-color: #E34E67;
+
+}
+
+
+#ouais{
+
+    background-color: #1E1D31;
+    border-width: 1px;
+    border-color: #30CD8A;
+   padding: 10px;
+   color: white;
+   width: 100%;
+}
+
+/* la c le menu déroulant select ↑ */
+
+
+/* responsive!!!!!↓↓↓↓ */
+
+
+@media screen and (max-width :1024px) {
+
+#div1{
+
+    display: grid;
+    margin: auto;
+}
+#div1 img{
+
+    max-width: 700px;
+     width:80%;
+    padding: 20px;
+    height: fit-content;
+
+}
+
+#div2la {
+
+    display: block;
+}
+#div2 a{
+
+    display: block;
+    width: fit-content;
+    margin: auto;
+
+}
+
+#d3art1{
+
+    margin: auto;
+}
+
+#d3art2{
+
+    display: block;
+}
+
+#d4demerde, #d4terrible{
+display: block;
+}
+
+#d4d2, #d4d1{
+
+    padding: 10px;
+}
+
+
+#div5{
+
+    display: grid;
+    inline-size: fit-content;
+}
+#d5a1{
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+#ftdiv1{
+
+    grid-template-columns: 1fr 1fr;
+}
+
+#uneligne2form{
+
+    grid-template-columns: auto;
+}
+
+}
